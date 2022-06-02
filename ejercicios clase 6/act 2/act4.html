@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script languaje="javascript">
+		
+		let palabra = prompt("Ingrese una palabra palindrome"," ");
+		let f;
+		let palindrome=true;
+
+		for(f=0;f<palabra.length/2;f++)
+		{
+			if(palabra.charAt(f) != palabra.charAt(palabra.length-1-f))
+				palindrome=false;
+		}
+document.write("La palabra " +palabra);
+document.write("<br>")
+
+if(palindrome){
+	document.write("es palindrome");
+}else{
+	document.write("no es palindrome");
+}
+		
+
+	</script>
+</head>
+<body>
+<!-- 4 – Ingresar una palabra o texto por teclado y determinar si es o no una palabra palíndrome.
+(Palabra que se lee de igual manera de adelante hacia atrás, que de atrás hacia delante). -->
+</body>
+</html>
+

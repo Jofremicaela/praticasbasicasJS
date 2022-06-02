@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+<script type="text/javascript">
+
+	
+	var prom1=0;
+	var prom2=0;
+	var prom3=0;
+
+	for (var f=0;f<=5;f++) 
+	{
+		var edad1=parseInt(prompt("Ingrese edad de alumno de turno mañana: "));
+		var prom1= prom1+ edad1 /5;
+	}
+	document.write("<br>");
+	document.write("El promedio de edades en el turno mañana: " +prom1);
+
+// turno tarde
+
+for (var f=0;f<=6;f++) 
+	{
+		var edad2=parseInt(prompt("Ingrese edad de alumno de turno tarde: "));
+		var prom2= prom2+ edad2 /6;
+	}
+	document.write("<br>");
+	document.write("El promedio de edades en el turno tarde: " +prom2);
+
+	//tarde noche
+
+	for (var f=0;f<=11;f++) 
+	{
+		var edad3=parseInt(prompt("Ingrese edad de alumno de turno noche: "));
+		var prom3= prom3+ edad3 /11;
+	}
+	document.write("<br>");
+	document.write("El promedio de edades en el turno noche: " +prom3);
+
+	if(prom1>prom2 && prom1>prom3)
+	{
+	document.write("<br>");
+	document.write("El mayor promedio de edades es del turno: " +prom1);
+	}else{
+		if(prom2>prom1 && prom2>prom3)
+		{
+	document.write("<br>");
+	document.write("El mayor promedio de edades es del turno: " +prom2);
+		}else{
+	document.write("<br>");
+	document.write("El mayor promedio de edades es del turno: " +prom3);
+		}
+	}
+
+</script>
+
+
+</head>
+<body>
+
+<!-- 8 - Se cuenta con la siguiente información:
+ Las edades de 5 estudiantes del turno mañana.
+ Las edades de 6 estudiantes del turno tarde.
+ Las edades de 11 estudiantes del turno noche. 
+Las edades de cada estudiante deben ingresarse por teclado.
+a) Obtener el promedio de las edades de cada turno (tres promedios).
+b) Imprimir dichos promedios (promedio de cada turno).
+c) Mostrar por pantalla un mensaje que indique cual de los tres turnos tiene un
+promedio de edades mayor -->
+
+</body>
+</html>

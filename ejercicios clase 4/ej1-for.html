@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <script languaje="javascript">
+
+            var base, altura, f;
+            var cantidad=0;
+            var superficie=0;
+            var t=0;
+
+            cantidad=parseInt(prompt("Que cantidad de triangulos procesarà : "));
+
+for(f=1; f<=cantidad;f++)
+{
+
+    base=parseInt(prompt("Ingrese valor de base: "));
+    altura = parseInt(prompt("Ingrese valor de Altura: "));
+    
+document.write("<br>");    
+document.write("La medida de la base es: " +base);
+document.write("<br>");
+document.write("La medida de la altura es: " +altura);
+document.write("<br>");
+var superficie=base*altura/2;
+document.write("La medida de la superficie es: " +superficie);
+
+if(superficie >12)
+{
+    t++;
+ 
+
+}
+
+}
+
+   document.write("<br>");
+    document.write("Cantidad de triangulos con superficie mayor a 12:  " +t );
+
+
+        </script>
+    </head>
+
+    <!-- 1 - Confeccionar un programa que lea N pares de datos, cada par de datos corresponde a la
+    medida de la base y la altura de un triángulo. El programa deberá informar:
+    a) De cada triángulo la medida de su base, su altura y su superficie. 
+    b) La cantidad de triángulos cuya superficie es mayor a 12. -->
+
+</html>
+
+
+

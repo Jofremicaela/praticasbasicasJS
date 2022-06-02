@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script languaje="javascript">
+
+
+
+function mitad(string)
+ {
+ document.write("Primera mitad de caracteres de la cadena:");
+ var f;
+ for(f=0;f<string.length/2;f++)
+ {
+ document.write(string.charAt(f));
+ }
+ document.write("<br>");
+ }
+
+function ultimocaracter(string)
+ {
+ document.write("Ultimo caracter: ");
+ document.write(string.charAt(string.length-1));
+ document.write("<br>");
+ }
+
+
+
+ function inversa(string)
+ {
+ document.write("Forma inversa:");
+ for(f=string.length-1;f>=0;f--)
+ {
+ document.write(string.charAt(f));
+ }
+ document.write("<br>");
+ }
+
+
+
+function guion(string){
+
+	document.write("Separado por guion: ");
+	var f;
+	for (f=0;f<string.length;f++) {
+		document.write(string.charAt(f)+"-")
+	}
+	document.write("<br>");
+}
+
+
+function vocales(string)
+{
+	let f;
+	let cadena=string.toUpperCase();
+	let cant=0;
+	for (f=0;f<cadena.length;f++) {
+		if (cadena.charAt(f)=='A' || cadena.charAt(f)=='E' ||
+ cadena.charAt(f)=='I' || cadena.charAt(f)=='O' ||
+cadena.charAt(f)=='U')
+  {
+  	cant++;
+  }
+	}
+	document.write("Cantidad de vocales:" +cant);
+
+}
+
+		
+
+let string;
+string=prompt("Ingrese una cadena de texto : ","");
+mitad(string);
+ultimocaracter(string);
+inversa(string);
+guion(string);
+vocales(string);
+
+
+
+
+
+	</script>
+</head>
+<body>
+	<!-- 6 - Cargar un String por teclado e implementar los siguientes métodos:
+a) Imprimir la primera mitad de los caracteres de la cadena.
+b) Imprimir el último caracter.
+c) Imprimirlo en forma inversa.
+d) Imprimir cada caracter del String separado con un guión.
+e) Imprimir la cantidad de vocales almacenadas.
+ -->
+</body>
+</html>

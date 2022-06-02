@@ -1,0 +1,22 @@
+<html>
+<head>
+	<script>
+
+		let frase = prompt('Ingrese una oración:');
+        document.write(frase + '<br><br>');
+        let palabra = prompt('Ingrese una palabra:');
+        if (frase.indexOf(palabra) != -1) {
+            document.write('La frase ingresada contiene la palabra: ' + palabra +
+                ' a partir de la posición ' + frase.indexOf(palabra));
+        } else {
+            document.write('La frase ingresada no contiene la palabra: ' + palabra);
+        }
+
+
+	</script>
+
+	<!-- Realizar la búsqueda de un string clave en un string fuente. Se deberá ingresar una frase
+o texto (fuente) y luego la clave a buscar. En caso de encontrarla, imprimir la posición, de lo
+contrario una leyenda. -->
+</head>
+</html>

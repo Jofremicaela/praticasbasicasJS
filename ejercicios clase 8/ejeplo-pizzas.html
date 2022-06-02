@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ejemplo de JavaScript</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+
+    <form>
+        <p>Pizzas:</p>
+        <p><select id="pizza" size="1" onChange="mostrarSeleccionPizza()">
+                <option value="180">Jamon y Queso</option>
+                <option value="150">Muzzarella</option>
+                <option value="170">Morrones</option>
+            </select></p>
+        <p><input type="text" id="mensaje"></p>
+    </form>
+
+    <script>
+        function mostrarSeleccionPizza() {
+document.getElementById('mensaje').value = document.getElementById('pizza').options[document.getElementById('pizza').selectedIndex].value;
+        }
+    </script>
+
+</body>
+ <!-- Confeccionar una página que muestre un objeto SELECT con distintos tipos de pizzas.
+Al seleccionar una mostrar en un objeto de tipo TEXT el precio de la misma. -->
+
+</html>

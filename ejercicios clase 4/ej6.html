@@ -1,0 +1,46 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		var cuad1=0;
+		var cuad2=0;
+		var cuad3=0;
+		var cuad4=0;
+var puntos = prompt("Cuantos puntos procesara? : ","");
+
+        for (var f=1;f<=puntos;f++) 
+        {
+        	
+        	var x = prompt("Ingrese un valor para el eje 'x' : ","");
+        	var y = prompt("Ingrese un valor para el eje 'y'  : ","");
+        	
+        	if (x > 0 && y > 0) {
+                cuad1++;
+            } else {
+                if (x < 0 && y > 0) {
+                    cuad2++;
+                } else {
+                    if (x < 0 && y < 0) {
+                        cuad3++;
+                    } else {
+                        if (x > 0 && y < 0) {
+                            cuad4++;
+                        }
+                    }
+                }
+            }
+        	
+        	}
+	</script>
+</head>
+<body>
+
+<!-- 6 - Escribir un programa que pida ingresar coordenadas (x,y) que representan puntos en el
+plano. Informar cuántos puntos se han ingresado en el primer, segundo, tercer y cuarto
+cuadrante. Al comenzar el programa se pide que se ingrese la cantidad de puntos a procesar. -->
+
+</body>
+</html>
+

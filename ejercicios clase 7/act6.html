@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		td {width:25%;}
+	.titulo { width: 17.6%; border: solid black 1px; height: 60px; text-align: center;}
+	</style>
+	<script languaje="javascript">
+var operacion=0;
+var memoria;
+
+function presionNumero(boton)
+ { 
+
+ if (boton==calculadora.a0)
+ calculadora.T1.value=calculadora.T1.value+"0";
+ if (boton==calculadora.a1)
+ calculadora.T1.value=calculadora.T1.value+"1";
+ if (boton==calculadora.a2)
+ calculadora.T1.value=calculadora.T1.value+"2";
+ if (boton==calculadora.a3)
+ calculadora.T1.value=calculadora.T1.value+"3";
+ if (boton==calculadora.a4)
+ calculadora.T1.value=calculadora.T1.value+"4";
+ if (boton==calculadora.a5)
+ calculadora.T1.value=calculadora.T1.value+"5";
+ if (boton==calculadora.a6)
+ calculadora.T1.value=calculadora.T1.value+"6";
+ if (boton==calculadora.a7)
+ calculadora.T1.value=calculadora.T1.value+"7";
+ if (boton==calculadora.a8)
+ calculadora.T1.value=calculadora.T1.value+"8";
+ if (boton==calculadora.a9)
+ calculadora.T1.value=calculadora.T1.value+"9";
+ }
+
+// operaciones de division,suma,resta,etc.
+
+
+		function presionOperacion(boton)
+ {
+ memoria=parseInt(calculadora.T1.value);
+ if (boton==calculadora.mas)
+ {
+ operacion=1;
+ }
+ if (boton==calculadora.menos)
+ {
+ operacion=2;
+ }
+ if (boton==calculadora.por)
+ {
+ operacion=3;
+ }
+ if (boton==calculadora.div)
+ {
+ operacion=4;
+ }
+ calculadora.T1.value="";
+ }
+
+function calcular()
+ {
+ var valor=parseInt(calculadora.T1.value);
+ var resultado;
+ switch (operacion) {
+ case 1:resultado=memoria+valor;
+ break;
+ case 2:resultado=memoria-valor;
+ break;
+ case 3:resultado=memoria*valor;
+ break;
+ case 4:resultado=memoria/valor;
+ break;
+ }
+ calculadora.T1.value=resultado;
+ }
+
+	 function borrarResultado()
+ {
+ operacion=0;
+ calculadora.T1.value="";
+ }	
+	</script>
+
+</head>
+<body>
+
+<div class="titulo">
+<h1>Calculadora</h1>
+</div>
+
+<form name="calculadora">
+	<table name="calculadora" border="1" >
+<tr>
+ <td width="100%" colspan="4"><input type="text" name="T1" size="20"></td>
+ </tr> 
+
+
+<tr>
+	<td><input type="button" name="a7" value="7" ONCLICK="presionNumero(this)"></td>
+	<td><input type="button" name="a8" value="8" ONCLICK="presionNumero(this)"></td>
+	<td><input type="button" name="a9" value="9" ONCLICK="presionNumero(this)"></td>
+	<td><input type="button" name="mas" value="+" ONCLICK="presionOperacion(this)"></td>
+</tr>
+<tr>
+	<td><input type="button" name="a4" value="4" ONCLICK="presionNumero(this)"></td>
+	<td><input type="button" name="a5" value="5" ONCLICK="presionNumero(this)"></td>
+	<td><input type="button" name="a6" value="6" ONCLICK="presionNumero(this)"></td>
+	<td><input type="button" name="menos" value="-" ONCLICK="presionOperacion(this)"></td>
+</tr>
+<tr>
+	<td><input type="button" name="a1" value="1" ONCLICK="presionNumero(this)"></td>
+	<td><input type="button" name="a2" value="2" ONCLICK="presionNumero(this)"></td>
+	<td><input type="button" name="a3" value="3" ONCLICK="presionNumero(this)"></td>
+	<td><input type="button" name="por" value="*" ONCLICK="presionOperacion(this)"></td>
+</tr>
+<tr>
+	<td><input type="button" name="a0" value="0" ONCLICK="presionNumero(this)"></td>
+	<td><input type="button" name="borrar" value="Borrar" ONCLICK="borrarResultado()"></td>
+	<td><input type="button" name="igual" value="=" ONCLICK="calcular()"></td>
+	<td><input type="button" name="div" value="/" ONCLICK="presionOperacion(this)"></td>
+</tr>		
+	
+	</table>
+	</form>
+
+</body>
+<!--  Implementar una calculadora con las cuatro operaciones básicas.-->
+ </html>

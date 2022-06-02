@@ -1,0 +1,52 @@
+<HTML>
+<HEAD>
+<SCRIPT LANGUAGE="JavaScript">
+ function cargar(provincias,temperaturas)
+ {
+ var f;
+ for(f=0;f<provincias.length;f++)
+ {
+ provincias[f]=prompt("Ingrese provincia:","");
+ temperaturas[f]=prompt("Ingrese temperatura:","");
+ temperaturas[f]=parseInt(temperaturas[f]);
+ }
+ }
+ function imprimir(provincias,temperaturas)
+ {
+ var f; 
+ for(f=0;f<provincias.length;f++)
+ {
+ document.write(provincias[f]+" "+temperaturas[f]+"<br>");
+ }
+ }
+
+ function menorTemperatura(provincias,temperaturas)
+ {
+ var men=temperaturas[0];
+ var nom=provincias[0];
+ var f;
+ for(f=1;f<provincias.length;f++)
+ {
+ if (temperaturas[f]<men)
+ {
+ men=temperaturas[f];
+ nom=provincias[f];
+ }
+ }
+ document.write("<br><br>");
+ document.write("La provincia "+nom+" tiene la menor temperatura que es "+men);
+ }
+
+ var provincias;
+ provincias=new Array(3);
+ var temperaturas;
+ temperaturas=new Array(3);
+ cargar(provincias,temperaturas);
+ imprimir(provincias,temperaturas);
+ menorTemperatura(provincias,temperaturas);
+
+</SCRIPT>
+</HEAD>
+<BODY>
+</BODY>
+</HTML>

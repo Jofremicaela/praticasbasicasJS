@@ -1,0 +1,65 @@
+<HTML>
+<HEAD>
+    <SCRIPT languaje="javascript">
+
+function cargar(provincias,temperatura)
+ {
+ var f;
+ for(f=0;f<provincias.length;f++)
+ {
+ provincias[f]=prompt("Ingrese provincia:","");
+ temperatura[f]=prompt("Ingrese temperatura:","");
+ temperatura[f]=parseInt(temperatura[f]);
+ }
+ } 
+
+
+ function imprimir(provincias,temperatura)
+ {
+var f;
+for(f=0; f < provincias.length; f++)
+{
+    document.write(provincias[f]+ " " +temperatura[f] +"<br>");
+}
+ }
+
+function menorTemperatura(provincias,temperatura)
+ {
+ var men=temperatura[0];
+ var nom=provincias[0];
+ var f;
+ for(f=1;f<provincias.length;f++)
+ {
+ if (temperatura[f]<men)
+ {
+ men=temperatura[f];
+ nom=provincias[f];
+ }
+ }
+ document.write("<br><br>");
+ document.write("La provincia "+nom+" tiene la menor temperatura que es "+men);
+} 
+
+var provincias;
+ provincias=new Array(3);
+ var temperatura;
+ temperatura=new Array(3);
+ cargar(provincias,temperatura);
+ imprimir(provincias,temperatura);
+ menorTemperatura(provincias,temperatura);
+
+        </SCRIPT>
+</HEAD>
+<!-- 3 - Se tienen dos vectores, en uno se deben cargar los nombres de las provincias Argentinas
+y en el otro las temperaturas medias anuales de cada provincia.
+Realizar un listado en la página de los datos cargados:
+ Nombre de Provincia. Temperatura.
+ Buenos Aires 22
+ Chubut 8
+ Córdoba 23
+ Salta 24
+Por último imprimir la provincia que tiene una temperatura menor. -->
+
+    </HTML>
+
+

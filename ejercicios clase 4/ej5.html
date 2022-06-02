@@ -1,0 +1,77 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+var equilatero=0;
+var isoceles=0;
+var escaleno=0;
+
+
+var tri=prompt("Cuantos triangulos procesara? : ","");
+
+
+for (var f=1; f<=tri;f++)
+ {
+var ladoa=parseInt(prompt("Ingrese valor de  lado 'A' del triangulo: "));
+var ladob=parseInt(prompt("Ingrese valor de  lado 'B' del triangulo: "));
+var ladoc=parseInt(prompt("Ingrese valor de  lado 'C' del triangulo: "));
+
+
+	if(ladoa==ladob && ladoa==ladoc)
+	{
+       
+		document.write("EL triangulo es : Equilatero. <br> ");
+		equilatero++;
+	}else{
+		if(ladoa==ladob || ladob==ladoc || ladoc==ladoa)
+		{
+				document.write("EL triangulo es : Isoceles.<br>");
+				isoceles++;
+		}else{
+				document.write("EL triangulo es : Escaleno.<br>");
+				escaleno++;
+		}}}
+
+            document.write("<br>");
+			document.write("Cantidad de triangulos Equilateros: " +equilatero);
+			document.write("<br>");
+			document.write("Cantidad de triangulos Isoceles: " +isoceles);
+			document.write("<br>");
+			document.write("Cantidad de triangulos Escaleno: " +escaleno);
+	        document.write("<br>");
+
+			if(equilatero<isoceles && equilatero<escaleno)
+			{
+				document.write("Hay menos cantidad de triangulos: Equilatero");
+			}else{
+				if(isoceles<equilatero && isoceles<escaleno)
+				{
+					document.write("Hay menos cantidad de triangulos: Isoceles");
+				}else{
+				 if(isoceles==equilatero && isoceles==escaleno){
+					document.write("Hay menos cantidad de triangulos: Isoceles, Equilatero y Escaleno");
+					
+				}else{
+
+					document.write("Hay menos cantidad de triangulos: Escaleno");
+				}
+				}
+			}
+	</script>
+</head>
+<body>
+	
+
+<!-- 5 - Realizar un programa que lea los lados de N triángulos, e informar:
+a) De cada uno de ellos, qué tipo de triángulo es: equilátero (tres lados iguales),
+isósceles (dos lados iguales), o escaleno (ningún lado igual).
+b) Cantidad de triángulos de cada tipo.
+c) Tipo de triángulo que posee menor cantidad. -->
+
+</body>
+</html>
+
+
+

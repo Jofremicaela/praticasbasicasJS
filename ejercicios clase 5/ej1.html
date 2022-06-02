@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		
+function numeromayor(v1,v2,v3) 
+{
+	if (v1>v2 && v1 >v3)
+	 {
+	 	return v1;
+	 }
+	 else{
+	 	if(v2>v1 && v2 > v3)
+	 	{
+	 		return v2;
+	 	}
+	 	else{
+	 			return v3;
+	 		}
+	 	}
+	 }
+
+var a= parseInt(prompt("Ingrese el primer valor"));
+var b= parseInt(prompt("Ingrese el segundo valor"));
+var c= parseInt(prompt("Ingrese el tercer valor")); 
+
+var mayor=numeromayor(a,b,c);
+
+document.write("EL mayor valor es : " +mayor);
+	</script>
+</head>
+<body>
+
+<!-- 1 - Confeccionar una función a la cual le envíe tres enteros y retorne el mayor de ellos. -->
+
+</body>
+</html>

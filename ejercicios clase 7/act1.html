@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <script languaje="javascript">
+
+
+            function mostrarCubo()
+            {
+               var texto=parseInt(formulacubo.text.value);
+                var cubo= texto*texto*texto;
+                alert("El resultado: " +cubo);
+            }
+        </script>
+    </head>
+
+    <body>
+        <form name="formulacubo">
+            <input type="text" name="text" placeholder="Ingresar un numero"><br>
+            <br>
+            <input type="button" ONCLICK="mostrarCubo()" value="Elevar al cubo" >
+
+        </form>
+
+    </body>
+        <!-- Crear un programa que permita cargar un entero en un text y al presionar un boton nos
+muestre dicho valor elevado al cubo. -->
+</html>

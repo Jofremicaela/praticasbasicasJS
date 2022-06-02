@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <script languaje="javasript">
+var p, s, t ;
+p = parseInt(prompt("Ingrese un valor",""));
+s = parseInt(prompt("Ingrese un valor",""));
+t = parseInt(prompt("Ingrese un valor",""));
+
+if(p>s || s<p)
+{
+    document.write("El mayor es " +p);
+    document.write("<br>");
+    document.write("El menor es " +s);
+}else{
+    if(p>t || t<p)
+    {
+        document.write("El mayor es " +p);
+        document.write("<br>");
+        document.write("El menor es " +t);
+    }else{
+        if(p<s || s>p)
+        {
+            document.write("El menor es " +p);
+            document.write("<br>");
+            document.write("El mayor es " +s);
+        }else{
+            if(t>p)
+            {
+                document.write("El menor es " +p);
+                document.write("<br>");
+                document.write("El mayor es "+t); 
+            }else{
+                if(t<s)
+                {
+                document.write("El menor es " +t);
+                document.write("<br>");
+                document.write("El mayor es "+s);  
+                }else{ if(t>s)
+                            {
+                document.write("El menor es " +s);
+                document.write("<br>");
+                document.write("El mayor es "+t);
+                            }}}}}}
+
+
+
+        </script>
+    </head>
+ <!--   19 - Escribir un programa en el cual: dada una lista de tres valores numéricos distintos se
+calcule e informe su rango de variación (debe mostrar el mayor y el menor de ellos).  --> 
+
+</html>

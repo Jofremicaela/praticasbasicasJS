@@ -1,0 +1,17 @@
+1 - Desarrollar un programa que permita ingresar un vector de 8 elementos, e informe:
+El valor acumulado de todos los elementos del vector.
+El valor acumulado de los elementos del vector que sean mayores a 36.
+Cantidad de valores mayores a 50.
+2 - Realizar un programa que pida la carga de dos vectores numéricos. Obtener la suma de
+los dos vectores, dicho resultado guardarlo en un tercer vector del mismo tamaño. Sumar
+componente a componente.
+El tamaño del vector es a elección.
+3 - Se tienen dos vectores, en uno se deben cargar los nombres de las provincias Argentinas
+y en el otro las temperaturas medias anuales de cada provincia.
+Realizar un listado en la página de los datos cargados:
+ Nombre de Provincia. Temperatura.
+ Buenos Aires 22
+ Chubut 8
+ Córdoba 23
+ Salta 24
+Por último imprimir la provincia que tiene una temperatura menor. 

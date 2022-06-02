@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script languaje="javascript">
+
+	
+		function cargaremail()
+		{
+			var v1=cargarmail.email.value;
+			
+			if (v1=="")
+			 {
+			 	document.write("No se ha cargado correctamente, volver a intentar!");
+			 	
+			 }else{
+			 	document.write("Se ha cargado el e-mail correctamente");
+			 }
+		}
+	</script>
+</head>
+<body>
+
+	<form id="cargarmail">
+
+<input type="email" id="email" placeholder="Ingresar e-mail"><br>
+<br>
+<input type="button" ONCLICK="cargaremail()" value="Cargar">
+		
+	</form>
+
+</body>
+<!-- Disponer un text donde se debe cargar una dirección de mail. Al presionar un botón
+mostrar un mensaje si no se cargó caracteres en el mismo. -->
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+      <meta charset="UTF-8">
+      </head>
+<body>
+        <script languaje="javascript">
+
+var nombre, preguntas, correctas;
+nombre = prompt("Ingrese el nombre","");
+preguntas = parseInt(prompt("Ingrese la cantidad de preguntas",""));
+correctas = parseInt(prompt("Ingrese la cantidad de preguntas correctas",""));
+var porcentaje;
+
+porcentaje = correctas / preguntas * 100;
+
+document.write(' EL postulante es '+nombre);
+
+if (porcentaje >=90)
+{
+document.write(" y su nivel superior");
+}
+else
+{
+if (porcentaje >=75)
+{
+document.write(" y su nivel es medio");
+}
+else
+{
+if (porcentaje>=50)
+{
+document.write(" y su nivel es regular");
+}
+else
+{
+document.write(" y esta fuera de nivel");
+}}}
+
+
+
+
+
+
+        </script>
+    
+
+  <!--   12 - De un postulante a un empleo, que realizó un test de capacitación, se obtuvo la siguiente
+información: nombre del postulante, cantidad total de preguntas que se le realizaron y
+cantidad de preguntas que contestó correctamente. Se pide confeccionar un programa que
+lea los datos del postulante e informe el nivel del mismo según el porcentaje de respuestas
+correctas que ha obtenido, y sabiendo que:
+Nivel superior: Porcentaje>=90%.
+Nivel medio: Porcentaje>=75% y <90%.
+Nivel regular: Porcentaje>=50% y <75%.
+Fuera de nivel: Porcentaje<50%. -->
+  </body>
+
+</html>

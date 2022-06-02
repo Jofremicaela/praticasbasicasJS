@@ -1,0 +1,29 @@
+<HTML>
+<HEAD>
+<TITLE>Ejemplo</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+function cambiarBarraStatus(boton)
+{
+if (boton==window.document.Form1.Boton1){
+alert("Se presionó el botón 1");
+}else
+if (boton==window.document.Form1.Boton2){
+status="Se presionó el botón 2";}
+else
+if (boton==window.document.Form1.Boton3){
+status="Se presionó el botón 3";}
+}
+</SCRIPT>
+</HEAD>
+<BODY>
+<FORM NAME="Form1">
+<INPUT TYPE="BUTTON" NAME="Boton1" VALUE="Mensaje 1" onClick="cambiarBarraStatus(this)">
+<p>
+<INPUT TYPE="BUTTON" NAME="Boton2" VALUE="Mensaje 2" onClick="cambiarBarraStatus(this)">
+</p>
+<p>
+<INPUT TYPE="BUTTON" NAME="Boton3" VALUE="Mensaje 3" onClick="cambiarBarraStatus(this)">
+</p>
+</FORM>
+</BODY>
+</HTML>

@@ -1,0 +1,29 @@
+<html>
+<head>
+	<script languaje="javascript">
+		function concatenar()
+		{
+			var nombre=concatenacion.nombre.value;
+			var apellido=concatenacion.apellido.value;
+			concatenacion.nomcompleto.value= nombre +" " +apellido;
+		}
+	</script>
+</head>
+<body>
+
+<form id="concatenacion">
+
+	<input type="text" name="nombre" placeholder="Ingrese Nombre" size="15"><br>
+	<br>
+	<input type="text" name="apellido" placeholder="Ingrese apellido" size="20"><br>
+	<br>
+<input type="button" ONCLICK="concatenar()" value="Concatenar">
+<input type="text" name="nomcompleto">
+	
+</form>
+
+
+</body>
+<!-- 	3 - Cargar un nombre y un apellido en sendos text. Al presionar un botón concatenarlos y
+mostrarlos en un tercer text. -->
+</html>

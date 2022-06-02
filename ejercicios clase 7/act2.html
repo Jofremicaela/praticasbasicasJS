@@ -1,0 +1,30 @@
+<html>
+<head>
+	<script languaje="javascript">
+		function mayor()
+		{
+			var numero1=parseInt(formulario.numero1.value);
+			var numero2=parseInt(formulario.numero2.value);
+
+			if(numero1>numero2){
+				document.write("El numero mas alto es: " +numero1);
+			}else{
+				document.write("El numero mas alto es: " +numero2);
+			}
+		}
+	</script>
+</head>
+
+
+<body>
+	<form name="formulario">
+		 <input type="text" name="numero1" placeholder="Ingrese el primer valor"><br>
+		<br>
+		 <input type="text" name="numero2" placeholder="Ingrese el segundo valor"><br>
+		<br>
+		<input type="button" ONCLICK="mayor()" value="Calcular mayor">
+	</form>
+</body>
+
+<!-- 2 - Cargar dos números en objetos de tipo text y al presionar un botón mostrar el mayor.-->
+ </html>

@@ -1,0 +1,32 @@
+<html>
+<head>
+	<script languaje="javascript">
+function verificar(email)
+{
+	let con=0;
+
+	for(let f=0;f<email.length;f++){
+		if(email.charAt(f) == '@'){
+			con++;
+		}
+	}
+if(con != 0){
+	document.write("El email " +email+ " contiene @");
+}else{
+	document.write("El email " +email+ " no contiene @");
+}
+
+}
+
+
+		let email=prompt("Ingrese un E-mail : ","");
+		verificar(email);
+
+		
+
+
+	</script>
+</head>
+<!-- 5 – Realizar un programa que permita cargar una dirección de mail e implementar una
+función que verifique si tiene cargado el caracter @ el String. -->
+</html>

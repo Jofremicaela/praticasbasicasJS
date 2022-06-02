@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <script languaje="javascript">
+var primero, segundo, tercero;
+primero = parseInt(prompt("Ingrese un numero"));
+segundo = parseInt(prompt("Ingrese un numero"));
+tercero = parseInt(prompt("Ingrese un numero"));
+
+if(primero == segundo && segundo == tercero)
+{
+var suma, multiplica;
+suma = primero+segundo;
+multiplica = suma * tercero;
+document.write ("El resultado de la suma es "+suma);
+document.write ("<br>");
+document.write (+suma, "*" +tercero, "=" +multiplica);
+}else{
+    document.write("Los digitos ingresados son " +primero, " " +segundo," " +tercero);
+}
+
+        </script>
+    </head>
+
+   <!--  Se ingresan tres valores por teclado, si todos son iguales se imprime la suma del primero
+    con el segundo y a este resultado se lo multiplica por el tercero. -->
+
+</html>

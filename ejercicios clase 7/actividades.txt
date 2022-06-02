@@ -1,0 +1,15 @@
+1 - Crear un programa que permita cargar un entero en un text y al presionar un botón nos
+muestre dicho valor elevado al cubo.
+
+2 - Cargar dos números en objetos de tipo text y al presionar un botón mostrar el mayor.
+
+3 - Cargar un nombre y un apellido en sendos text. Al presionar un botón concatenarlos y
+mostrarlos en un tercer text.
+
+4 - Disponer un text donde se debe cargar una dirección de mail. Al presionar un botón
+mostrar un mensaje si no se cargó caracteres en el mismo.
+
+5 - Solicitar que se cargue el valor del lado de un cuadrado y mostrar posteriormente su
+superficie y perímetro.
+
+6 - Implementar una calculadora con las cuatro operaciones básicas.

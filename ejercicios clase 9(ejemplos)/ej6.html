@@ -1,0 +1,36 @@
+<HTML>
+<HEAD>
+ <TITLE>Hola mundo</TITLE>
+</HEAD>
+<BODY>
+<SCRIPT LANGUAGE="JavaScript">
+ function cambiarColor(boton)
+ {
+ if (boton==document.Form1.BOTON1)
+ document.bgColor=0xff0000;
+ if (boton==document.Form1.BOTON2)
+ document.bgColor=0x00ff00;
+ if (boton==document.Form1.BOTON3)
+ document.bgColor=0x0000ff;
+ if (boton==document.Form1.BOTON4)
+ document.bgColor=0xffff00;
+ if (boton==document.Form1.BOTON5)
+ document.bgColor=0x00ffff;
+ if (boton==document.Form1.BOTON6)
+ document.bgColor=0x000000;
+ if (boton==document.Form1.BOTON7)
+ document.bgColor=0xffffff;
+ }
+</SCRIPT>
+<FORM NAME="Form1">
+ <INPUT TYPE="BUTTON" NAME="BOTON1" VALUE="ROJO" onClick="cambiarColor(this)">
+ <p><INPUT TYPE="BUTTON" NAME="BOTON2" VALUE="VERDE" onClick="cambiarColor(this)"></p>
+ <p><INPUT TYPE="BUTTON" NAME="BOTON3" VALUE="AZUL" onClick="cambiarColor(this)"></p>
+ <p><INPUT TYPE="BUTTON" NAME="BOTON4" VALUE="AMARILLO" onClick="cambiarColor(this)"></p>
+ <p><INPUT TYPE="BUTTON" NAME="BOTON5" VALUE="CELESTE" onClick="cambiarColor(this)"></p>
+ <p><INPUT TYPE="BUTTON" NAME="BOTON6" VALUE="NEGRO" onClick="cambiarColor(this)"></p>
+ <p><INPUT TYPE="BUTTON" NAME="BOTON7" VALUE="BLANCO" onClick="cambiarColor(this)"></p>
+ <p>&nbsp;</p>
+</FORM>
+</BODY>
+</HTML> 

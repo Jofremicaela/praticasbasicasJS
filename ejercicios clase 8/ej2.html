@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        function presupuesto()
+        {
+            var ele1 = document.getElementById('procesador')
+            var precio1 = ele1.options[ele1.selectedIndex].value;
+
+            var ele2 = document.getElementById('monitor')
+            var precio2 = ele2.options[ele2.selectedIndex].value;
+
+            var ele3 = document.getElementById('discoduro')
+            var precio3 = ele3.options[ele3.selectedIndex].value;
+
+            precio1 = parseInt(precio1);
+            precio2 = parseInt(precio2);
+            precio3 = parseInt(precio3);
+            var suma = precio1 + precio2 + precio3;
+            document.getElementById('resultado').value = suma;
+
+        }
+
+    </script>
+</head>
+
+
+<body>
+    
+    <form name="form1">
+        Procesador: <select id="procesador">
+            <option value="400">Pentium III </option>
+            <option value="500">Pentium IV </option>
+        </select>
+        <br><br>
+        Monitor: <select id="monitor">
+            <option value="250">Samsung 14</option>
+            <option value="350">Samsung 15 </option>
+            <option value="550">Samsung 17</option>
+        </select><br><br>
+        Disco duro: <select id="discoduro">
+            <option value="300">20 GB</option>
+            <option value="440">40 GB</option>
+            <option value="500">80 GB</option>
+        </select><br><br>
+
+        <p><input type="button" name="Boton1" value="Calcular Presupuesto" onclick="presupuesto()"></p><br>
+        <p>Presupuesto: <input type="text" id="resultado"></p>
+    </form>
+
+
+</body>
+
+<!-- Generar un presupuesto de un equipo de computación a partir de tres objetos de tipo
+SELECT que nos permiten seleccionar:
+Procesador (Pentium III - $400, Pentium IV $500).
+Monitor (Samsung 14' - $250, Samsung 15' - $350, Samsung 17' - $550)
+Disco Duro(20 Gb - $300, 40 Gb - $440, 80 Gb - $500)
+Para cada característica indicamos string a mostrar (Ej. Pentium III) y el valor asociado a
+dicho string (Ej. 400).
+Al presionar un botón "Calcular" mostrar en un objeto de tipo TEXT el presupuesto. -->
+
+</html>

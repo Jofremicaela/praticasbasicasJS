@@ -1,0 +1,26 @@
+
+<html>
+<head>
+	
+	<script languaje="javascript">
+
+		function calcularsp()
+		{
+			var lado=parseInt(calculo.valor.value);
+			var sup= lado*lado;
+			var per=lado*4;
+			alert("Perimetro: "+per + " " + "superficie: "+sup);
+		}
+	</script>
+</head>
+<body>
+	<form name="calculo">
+		<input type="text" name="valor" placeholder="cargar un valor"><br>
+		<br>
+		<input type="button" ONCLICK="calcularsp()" value="Calcular" >
+		
+	</form>
+</body>
+<!-- Solicitar que se cargue el valor del lado de un cuadrado y mostrar posteriormente su
+superficie y perímetro. -->
+</html>

@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <script languaje="javascript">
+            var primero, segundo, suma, resta, multiplicacion, division;
+            primero = prompt("ingrese el primer valor","");
+            segundo = prompt("ingrese el segundo valor","");
+            primero = parseInt(primero);
+            segundo = parseInt(segundo);
+            
+            if(primero > segundo)
+            {
+                var suma;
+                suma = parseInt(primero)+ parseInt(segundo);
+                document.write("La suma de los digitos es "+suma);
+                document.write("<br>");
+                resta = primero-segundo;
+                document.write("La diferencia es " +resta);
+            }else {
+                multiplicacion = primero*segundo;
+                document.write("El producto es " +multiplicacion);
+                document.write("<br>");
+                division = primero/segundo;
+                document.write("La division de los digitos da como resultado: " +division);
+
+
+            }
+
+        </script>
+    </head>
+    <!-- 5- Realizar un programa que lea por teclado dos números, si el primero es mayor  al segundo informar su suma y diferencia, 
+        en caso contrario informar el producto y la  división
+del primero respecto al segundo. -->
+</html>
